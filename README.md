@@ -2,13 +2,25 @@
 
 ## Project Overview
 This project features a fully interactive Year-over-Year (YoY) Sales Performance Dashboard built using Tableau Desktop Public. The goal was to provide an at-a-glance comparison of key sales metrics across years (2020–2023), enabling deep-dive analysis by product categories and regional breakdowns.
+
+#### Tableau link https://public.tableau.com/app/profile/irena.iverson/viz/SalesAnalysisYoY/SalesDashboard
 _______________________________
 ## Dataset & Data Model
-Dataset: Superstore sample dataset
-File: Superstore.xls
-Rows used: approximately 10,000
-Key fields: Order Date, Sales, Profit, Quantity, Sub-Category, Region, State, City
-Minimal data preparation was needed. Most transformations were completed using Tableau’s calculated fields and built-in functions.
+The analysis was based on four separate CSV files integrated within Tableau:
+- customers.csv – customer details including IDs, segments, and demographics
+- location.csv – geographic data containing region, state, and city
+- orders.csv – transactional data with order dates, quantities, sales, and profit
+- products.csv – product catalog including category and subcategory information
+
+Each dataset was connected using key fields such as Customer ID, Product ID, and Location ID to create a unified data model for analysis.
+
+#### Data Model
+
+The central table in this model is Orders.csv, which serves as the primary fact table containing transactional data. It is linked to three dimension tables — Customers.csv, Location.csv, and Products.csv — using inner joins based on unique identifiers.
+
+This star-like structure allows efficient aggregation and filtering of sales and profit metrics by customer, product, and geographic attributes.
+<img width="691" height="340" alt="Picture 2025-10-24 at 6 38 33 PM" src="https://github.com/user-attachments/assets/963d00b2-dcf8-4afa-852f-695b8ea30b26" />
+
 ________________________________
 ## Key Requirements
 
@@ -65,3 +77,8 @@ Quantity
 - Quantity sold reached 12.5K units, a 26.8% increase from the previous year
 
 All visualizations update based on filter selections, allowing for targeted, real-time analysis.
+
+<img width="1394" height="796" alt="Picture 2025-10-24 at 1 37 16 PM" src="https://github.com/user-attachments/assets/e774c2aa-929b-4513-be52-e1974dfe5e53" />
+<img width="1381" height="794" alt="Picture 2025-10-24 at 1 37 49 PM" src="https://github.com/user-attachments/assets/a21e0e76-ffce-466d-8be7-7c6017af9543" />
+
+

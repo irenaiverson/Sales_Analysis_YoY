@@ -1,4 +1,4 @@
-# Tableau: Sales_Analysis_YoY
+# Sales_Analysis_YoY using Tableau Public
 
 ## Project Overview
 This project features a fully interactive Year-over-Year (YoY) Sales Performance Dashboard built using Tableau Desktop Public. The goal was to provide an at-a-glance comparison of key sales metrics across years (2020–2023), enabling deep-dive analysis by product categories and regional breakdowns.

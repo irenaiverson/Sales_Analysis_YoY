@@ -2,8 +2,21 @@
 
 ## Project Overview
 This project features a fully interactive Year-over-Year (YoY) Sales Performance Dashboard built using Tableau Desktop Public. The goal was to provide an at-a-glance comparison of key sales metrics across years (2020–2023), enabling deep-dive analysis by product categories and regional breakdowns.
-
-#### Tableau link https://public.tableau.com/app/profile/irena.iverson/viz/SalesAnalysisYoY/SalesDashboard
+___________________________________
+## Dashboard 
+#### Explore the interactive visualization here: https://public.tableau.com/app/profile/irena.iverson/viz/SalesAnalysisYoY/SalesDashboard
+The dashboard is fully dynamic:
+- Tracks three primary KPIs: sales, profit, and quantity sold, all with YoY comparisons
+- Includes interactive trendlines for both monthly and weekly views
+- Provides comparative visuals for sales and profit by subcategory
+- Features conditional formatting to highlight top and bottom months
+- Displays dynamic bars for weekly data relative to average performance
+  _________________________________
+#### Interactive Filters
+- Year selector covering 2020 to 2023
+- Product category filter: Office Supplies, Furniture, Technology
+- Region filter: East, South, West, Central
+- Additional filters: State and City for local-level analysis
 _______________________________
 ## Dataset & Data Model
 The analysis was based on four separate CSV files integrated within Tableau:
@@ -42,19 +55,6 @@ Weekly Sales and Profit Analysis
 - Show week-by-week fluctuations in sales and profit for the current year
 - Calculate and display average weekly performance as a benchmark
 - Use color cues or labels to spotlight weeks performing above or below average
-___________________________________
-## Dashboard Highlights
-- Tracks three primary KPIs: sales, profit, and quantity sold, all with YoY comparisons
-- Includes interactive trendlines for both monthly and weekly views
-- Provides comparative visuals for sales and profit by subcategory
-- Features conditional formatting to highlight top and bottom months
-- Displays dynamic bars for weekly data relative to average performance
-  _________________________________
-## Interactive Filters
-- Year selector covering 2020 to 2023
-- Product category filter: Office Supplies, Furniture, Technology
-- Region filter: East, South, West, Central
-- Additional filters: State and City for local-level analysis
   _________________________________
 ## Key Calculations used
 - To be added
